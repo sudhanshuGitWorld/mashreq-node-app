@@ -1,0 +1,35 @@
+{
+  "name": "mashreq-node-app",
+  "version": "1.0.0",
+  "description": "This is mashreq-node-app application, Which built using MERN Stack.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhanshuGitWorld/mashreq-node-app.git"
+  },
+  "keywords": [
+    "mashreq-node-app",
+    "Node JS App",
+    "MERN Stack"
+  ],
+  "author": "Sudhanshu Shrivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudhanshuGitWorld/mashreq-node-app/issues"
+  },
+  "homepage": "https://github.com/sudhanshuGitWorld/mashreq-node-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.3",
+    "validator": "^13.12.0"
+  }
+}
