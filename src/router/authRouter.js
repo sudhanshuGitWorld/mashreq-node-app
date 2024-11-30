@@ -2,7 +2,7 @@ const express = require('express');
 const authRouter = express.Router();
 const bcrypt = require('bcrypt');
 
-const UserModel = require('../model/user')
+const UserModel = require('../model/user');
 const { validateSignUpData } = require('../utils/validation');
 
 authRouter.post('/signup', async (req, res) => {
@@ -22,7 +22,7 @@ authRouter.post('/signup', async (req, res) => {
         await data.save();
         res.send('User added successfully');
     } catch (err) {
-        res.status(400).send('Error while saving the user ' + err.message);
+        res.status(400).send(err.message);
     }
 })
 
